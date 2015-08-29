@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0A037ACE1B912B020022EB1A /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A037ACD1B912B020022EB1A /* Helper.swift */; };
-		0A037AD01B912BB00022EB1A /* BallClock-Iteration0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A037ACF1B912BB00022EB1A /* BallClock-Iteration0.swift */; };
+		0A037AD01B912BB00022EB1A /* BallClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A037ACF1B912BB00022EB1A /* BallClock.swift */; };
+		0A037ADC1B9147820022EB1A /* BlockClockTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A037ADB1B9147820022EB1A /* BlockClockTest.swift */; };
+		0A037AE01B9148D40022EB1A /* BallClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A037ACF1B912BB00022EB1A /* BallClock.swift */; };
+		0A037AE11B9148D70022EB1A /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A037ACD1B912B020022EB1A /* Helper.swift */; };
 		0A08181B1B9026C800A74472 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A08181A1B9026C800A74472 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,12 +29,22 @@
 
 /* Begin PBXFileReference section */
 		0A037ACD1B912B020022EB1A /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
-		0A037ACF1B912BB00022EB1A /* BallClock-Iteration0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BallClock-Iteration0.swift"; sourceTree = "<group>"; };
+		0A037ACF1B912BB00022EB1A /* BallClock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallClock.swift; sourceTree = "<group>"; };
+		0A037AD71B9147820022EB1A /* BlockClockTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlockClockTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A037ADA1B9147820022EB1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A037ADB1B9147820022EB1A /* BlockClockTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockClockTest.swift; sourceTree = "<group>"; };
 		0A0818171B9026C800A74472 /* BallClock */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BallClock; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A08181A1B9026C800A74472 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0A037AD41B9147820022EB1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0A0818141B9026C800A74472 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -42,10 +55,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A037AD81B9147820022EB1A /* BlockClockTest */ = {
+			isa = PBXGroup;
+			children = (
+				0A037ADB1B9147820022EB1A /* BlockClockTest.swift */,
+				0A037AD91B9147820022EB1A /* Supporting Files */,
+			);
+			path = BlockClockTest;
+			sourceTree = "<group>";
+		};
+		0A037AD91B9147820022EB1A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A037ADA1B9147820022EB1A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		0A08180E1B9026C800A74472 = {
 			isa = PBXGroup;
 			children = (
 				0A0818191B9026C800A74472 /* BallClock */,
+				0A037AD81B9147820022EB1A /* BlockClockTest */,
 				0A0818181B9026C800A74472 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				0A0818171B9026C800A74472 /* BallClock */,
+				0A037AD71B9147820022EB1A /* BlockClockTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,7 +95,7 @@
 			children = (
 				0A037ACD1B912B020022EB1A /* Helper.swift */,
 				0A08181A1B9026C800A74472 /* main.swift */,
-				0A037ACF1B912BB00022EB1A /* BallClock-Iteration0.swift */,
+				0A037ACF1B912BB00022EB1A /* BallClock.swift */,
 			);
 			path = BallClock;
 			sourceTree = "<group>";
@@ -71,6 +103,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0A037AD61B9147820022EB1A /* BlockClockTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A037ADD1B9147820022EB1A /* Build configuration list for PBXNativeTarget "BlockClockTest" */;
+			buildPhases = (
+				0A037AD31B9147820022EB1A /* Sources */,
+				0A037AD41B9147820022EB1A /* Frameworks */,
+				0A037AD51B9147820022EB1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlockClockTest;
+			productName = BlockClockTest;
+			productReference = 0A037AD71B9147820022EB1A /* BlockClockTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		0A0818161B9026C800A74472 /* BallClock */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A08181E1B9026C800A74472 /* Build configuration list for PBXNativeTarget "BallClock" */;
@@ -97,6 +146,9 @@
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Morphosis Games";
 				TargetAttributes = {
+					0A037AD61B9147820022EB1A = {
+						CreatedOnToolsVersion = 6.4;
+					};
 					0A0818161B9026C800A74472 = {
 						CreatedOnToolsVersion = 6.4;
 					};
@@ -115,16 +167,37 @@
 			projectRoot = "";
 			targets = (
 				0A0818161B9026C800A74472 /* BallClock */,
+				0A037AD61B9147820022EB1A /* BlockClockTest */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		0A037AD51B9147820022EB1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		0A037AD31B9147820022EB1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A037ADC1B9147820022EB1A /* BlockClockTest.swift in Sources */,
+				0A037AE01B9148D40022EB1A /* BallClock.swift in Sources */,
+				0A037AE11B9148D70022EB1A /* Helper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0A0818131B9026C800A74472 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A037AD01B912BB00022EB1A /* BallClock-Iteration0.swift in Sources */,
+				0A037AD01B912BB00022EB1A /* BallClock.swift in Sources */,
 				0A08181B1B9026C800A74472 /* main.swift in Sources */,
 				0A037ACE1B912B020022EB1A /* Helper.swift in Sources */,
 			);
@@ -133,6 +206,38 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		0A037ADE1B9147820022EB1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BlockClockTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0A037ADF1B9147820022EB1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BlockClockTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		0A08181C1B9026C800A74472 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -228,6 +333,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0A037ADD1B9147820022EB1A /* Build configuration list for PBXNativeTarget "BlockClockTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A037ADE1B9147820022EB1A /* Debug */,
+				0A037ADF1B9147820022EB1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		0A0818121B9026C800A74472 /* Build configuration list for PBXProject "BallClock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

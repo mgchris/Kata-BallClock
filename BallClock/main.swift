@@ -22,7 +22,7 @@ import Foundation
 
 let start = NSDate()
 for i in 27...127 {
-    cycleClockWith(i)
+    cycleClockWith(i, true)
 }
 let end = NSDate()
 let interval = end.timeIntervalSinceDate(start)

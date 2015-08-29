@@ -94,8 +94,13 @@ func ==(let lhs: [Ball], let rhs: [Ball]) -> Bool {
     return match
 }
 
-func cycleClockWith(let ballCount: Int) {
-    let startTime = NSDate()
+func cycleClockWith(let ballCount: Int, let logTime: Bool) -> String {
+    
+    var startTime: NSDate?
+    
+    if logTime {
+        startTime = NSDate()
+    }
     
     var startingQueue = [Ball]()
     for var index = 0; index < ballCount; index++ {
@@ -119,9 +124,15 @@ func cycleClockWith(let ballCount: Int) {
         }
     }
     
-    let endTime = NSDate()
-    let spent = endTime.timeIntervalSinceDate(startTime)
     let days = totalTicks / 24 / 60
-    println("\(ballCount) balls cycle after \(days) days  [Processing Time: \(spent.toFormattedString())  Interval: \(spent)]")
+    let string = "\(ballCount) balls cycle after \(days) days."
+    
+    if let start = startTime {
+        let endTime = NSDate()
+        let spent = endTime.timeIntervalSinceDate(start)
+        println(string + " [Processing Time: \(spent.toFormattedString())  Interval: \(spent)]")
+    }
+    
+    return string
 }
 

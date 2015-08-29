@@ -1,0 +1,142 @@
+
+
+tickets: 	44,115,840
+half Day: 	61,272
+
+
+45 days = 45 * 24 * 60 
+
+30 days = 30 * 24 * 60 = 43,200
+43,200 / 2 = 21,600
+21,600 - 19,440 = 2,160
+2,160 - 720 => 1440 - 720 => 720
+19440 / 24 => 810 => 13.5
+15 - 13.5 => 1.5
+
+
+
+Demo output:
+30 45 0 Output for the Sample Input
+30 balls cycle after 15 days. 45 balls cycle after 378 days.
+
+
+
+My output:  Simple implementation
+
+
+Iteration0:
+
+27 balls cycle after 23 days  [Processing Time: 00:00:00:10  Interval: 0.107950985431671]
+28 balls cycle after 76 days  [Processing Time: 00:00:00:35  Interval: 0.358102023601532]
+29 balls cycle after 102 days  [Processing Time: 00:00:00:48  Interval: 0.482744991779327]
+30 balls cycle after 15 days  [Processing Time: 00:00:00:07  Interval: 0.0736770033836365]
+31 balls cycle after 85 days  [Processing Time: 00:00:00:38  Interval: 0.385617971420288]
+32 balls cycle after 65 days  [Processing Time: 00:00:00:29  Interval: 0.298456013202667]
+33 balls cycle after 138 days  [Processing Time: 00:00:00:66  Interval: 0.667339026927948]
+34 balls cycle after 91 days  [Processing Time: 00:00:00:42  Interval: 0.427510976791382]
+35 balls cycle after 12 days  [Processing Time: 00:00:00:05  Interval: 0.0555689930915833]
+36 balls cycle after 117 days  [Processing Time: 00:00:00:55  Interval: 0.557088971138]
+37 balls cycle after 120 days  [Processing Time: 00:00:00:56  Interval: 0.568877041339874]
+38 balls cycle after 345 days  [Processing Time: 00:00:01:62  Interval: 1.62718099355698]
+39 balls cycle after 35 days  [Processing Time: 00:00:00:16  Interval: 0.164769053459167]
+40 balls cycle after 37 days  [Processing Time: 00:00:00:18  Interval: 0.182084023952484]
+41 balls cycle after 217 days  [Processing Time: 00:00:01:03  Interval: 1.03203999996185]
+42 balls cycle after 114 days  [Processing Time: 00:00:00:55  Interval: 0.552035987377167]
+43 balls cycle after 110 days  [Processing Time: 00:00:00:52  Interval: 0.52078104019165]
+44 balls cycle after 105 days  [Processing Time: 00:00:00:48  Interval: 0.48471200466156]
+45 balls cycle after 378 days  [Processing Time: 00:00:01:78  Interval: 1.78676998615265]
+46 balls cycle after 126 days  [Processing Time: 00:00:00:58  Interval: 0.588237047195435]
+47 balls cycle after 6270 days  [Processing Time: 00:00:29:65  Interval: 29.6593559980392]
+48 balls cycle after 12 days  [Processing Time: 00:00:00:05  Interval: 0.0564219951629639]
+49 balls cycle after 513 days  [Processing Time: 00:00:02:43  Interval: 2.43189299106598]
+50 balls cycle after 1116 days  [Processing Time: 00:00:05:25  Interval: 5.25753897428513]
+51 balls cycle after 770 days  [Processing Time: 00:00:03:64  Interval: 3.64630103111267]
+52 balls cycle after 86 days  [Processing Time: 00:00:00:41  Interval: 0.415957987308502]
+53 balls cycle after 51 days  [Processing Time: 00:00:00:24  Interval: 0.247956037521362]
+54 balls cycle after 30 days  [Processing Time: 00:00:00:14  Interval: 0.14240700006485]
+55 balls cycle after 693 days  [Processing Time: 00:00:03:29  Interval: 3.29039996862411]
+56 balls cycle after 180 days  [Processing Time: 00:00:00:84  Interval: 0.845853984355927]
+57 balls cycle after 930 days  [Processing Time: 00:00:04:36  Interval: 4.36153000593185]
+58 balls cycle after 559 days  [Processing Time: 00:00:02:65  Interval: 2.65479201078415]
+59 balls cycle after 858 days  [Processing Time: 00:00:04:04  Interval: 4.04717999696732]
+60 balls cycle after 495 days  [Processing Time: 00:00:02:34  Interval: 2.34619301557541]
+61 balls cycle after 11067 days  [Processing Time: 00:00:52:30  Interval: 52.305133998394]
+62 balls cycle after 714 days  [Processing Time: 00:00:03:37  Interval: 3.3741739988327]
+63 balls cycle after 455 days  [Processing Time: 00:00:02:14  Interval: 2.14116102457047]
+64 balls cycle after 378 days  [Processing Time: 00:00:01:77  Interval: 1.77826100587845]
+65 balls cycle after 84 days  [Processing Time: 00:00:00:40  Interval: 0.406717002391815]
+66 balls cycle after 105 days  [Processing Time: 00:00:00:49  Interval: 0.496868014335632]
+67 balls cycle after 12 days  [Processing Time: 00:00:00:05  Interval: 0.0581049919128418]
+68 balls cycle after 236 days  [Processing Time: 00:00:01:09  Interval: 1.0959569811821]
+69 balls cycle after 7095 days  [Processing Time: 00:00:33:88  Interval: 33.8880689740181]
+70 balls cycle after 255 days  [Processing Time: 00:00:01:20  Interval: 1.20372200012207]
+71 balls cycle after 60 days  [Processing Time: 00:00:00:27  Interval: 0.275379002094269]
+72 balls cycle after 4524 days  [Processing Time: 00:00:21:32  Interval: 21.3274530172348]
+73 balls cycle after 3848 days  [Processing Time: 00:00:18:20  Interval: 18.2039309740067]
+74 balls cycle after 1530 days  [Processing Time: 00:00:07:29  Interval: 7.2958949804306]
+75 balls cycle after 1955 days  [Processing Time: 00:00:09:26  Interval: 9.26080197095871]
+76 balls cycle after 268 days  [Processing Time: 00:00:01:27  Interval: 1.27098900079727]
+77 balls cycle after 714 days  [Processing Time: 00:00:03:36  Interval: 3.3683500289917]
+78 balls cycle after 25389 days  [Processing Time: 00:01:59:99  Interval: 119.991856992245]
+79 balls cycle after 1155 days  [Processing Time: 00:00:05:50  Interval: 5.50060200691223]
+80 balls cycle after 9360 days  [Processing Time: 00:00:44:28  Interval: 44.2896590232849]
+81 balls cycle after 2006 days  [Processing Time: 00:00:09:57  Interval: 9.57026600837708]
+82 balls cycle after 805 days  [Processing Time: 00:00:03:78  Interval: 3.78480303287506]
+83 balls cycle after 4446 days  [Processing Time: 00:00:21:06  Interval: 21.0626710057259]
+84 balls cycle after 1122 days  [Processing Time: 00:00:05:36  Interval: 5.36681097745895]
+85 balls cycle after 540 days  [Processing Time: 00:00:02:56  Interval: 2.56750798225403]
+86 balls cycle after 36 days  [Processing Time: 00:00:00:17  Interval: 0.171772003173828]
+87 balls cycle after 570 days  [Processing Time: 00:00:02:67  Interval: 2.67601597309113]
+88 balls cycle after 1026 days  [Processing Time: 00:00:04:87  Interval: 4.87918800115585]
+89 balls cycle after 11033 days  [Processing Time: 00:00:52:16  Interval: 52.1628530025482]
+90 balls cycle after 1218 days  [Processing Time: 00:00:05:84  Interval: 5.84843403100967]
+91 balls cycle after 6580 days  [Processing Time: 00:00:31:32  Interval: 31.3282350301743]
+92 balls cycle after 312 days  [Processing Time: 00:00:01:49  Interval: 1.49333900213242]
+93 balls cycle after 301 days  [Processing Time: 00:00:01:43  Interval: 1.43676799535751]
+94 balls cycle after 3367 days  [Processing Time: 00:00:16:31  Interval: 16.3112580180168]
+95 balls cycle after 42780 days  [Processing Time: 00:03:23:09  Interval: 203.099847972393]
+96 balls cycle after 2550 days  [Processing Time: 00:00:12:03  Interval: 12.0304889678955]
+97 balls cycle after 550 days  [Processing Time: 00:00:02:60  Interval: 2.60705202817917]
+98 balls cycle after 1365 days  [Processing Time: 00:00:06:47  Interval: 6.47174596786499]
+99 balls cycle after 6630 days  [Processing Time: 00:00:31:32  Interval: 31.3246679902077]
+100 balls cycle after 105 days  [Processing Time: 00:00:00:50  Interval: 0.508189976215363]
+101 balls cycle after 861 days  [Processing Time: 00:00:04:10  Interval: 4.10129898786545]
+102 balls cycle after 4514 days  [Processing Time: 00:00:21:25  Interval: 21.2501149773598]
+103 balls cycle after 291 days  [Processing Time: 00:00:01:37  Interval: 1.374332010746]
+104 balls cycle after 3960 days  [Processing Time: 00:00:18:75  Interval: 18.7520850300789]
+105 balls cycle after 1464 days  [Processing Time: 00:00:06:96  Interval: 6.96022403240204]
+106 balls cycle after 1577 days  [Processing Time: 00:00:07:52  Interval: 7.52476102113724]
+107 balls cycle after 4284 days  [Processing Time: 00:00:20:40  Interval: 20.4017390012741]
+108 balls cycle after 5187 days  [Processing Time: 00:00:24:47  Interval: 24.4735440015793]
+109 balls cycle after 126 days  [Processing Time: 00:00:00:60  Interval: 0.605386972427368]
+110 balls cycle after 17094 days  [Processing Time: 00:01:21:70  Interval: 81.7063300013542]
+111 balls cycle after 15330 days  [Processing Time: 00:01:12:90  Interval: 72.9013299942017]
+112 balls cycle after 1785 days  [Processing Time: 00:00:08:47  Interval: 8.47073704004288]
+113 balls cycle after 43890 days  [Processing Time: 00:03:26:53  Interval: 206.532158017159]
+114 balls cycle after 25872 days  [Processing Time: 00:02:01:27  Interval: 121.275636970997]
+115 balls cycle after 5762 days  [Processing Time: 00:00:27:11  Interval: 27.1122800111771]
+116 balls cycle after 3325 days  [Processing Time: 00:00:15:75  Interval: 15.7540680170059]
+117 balls cycle after 204 days  [Processing Time: 00:00:00:94  Interval: 0.946501016616821]
+118 balls cycle after 3420 days  [Processing Time: 00:00:16:15  Interval: 16.15384298563]
+119 balls cycle after 78120 days  [Processing Time: 00:06:10:18  Interval: 370.183426976204]
+120 balls cycle after 1224 days  [Processing Time: 00:00:05:76  Interval: 5.76852601766586]
+121 balls cycle after 776 days  [Processing Time: 00:00:03:75  Interval: 3.75532799959183]
+122 balls cycle after 273 days  [Processing Time: 00:00:01:28  Interval: 1.28679901361465]
+123 balls cycle after 108855 days  [Processing Time: 00:08:32:90  Interval: 512.903474986553]
+124 balls cycle after 174 days  [Processing Time: 00:00:00:80  Interval: 0.809866011142731]
+125 balls cycle after 14430 days  [Processing Time: 00:01:07:82  Interval: 67.8291710019112]
+126 balls cycle after 80080 days  [Processing Time: 00:06:25:82  Interval: 385.828556954861]
+127 balls cycle after 2415 days  [Processing Time: 00:00:11:37  Interval: 11.3752280473709]
+Total processing Time: 00:47:08:61
+
+
+
+
+
+
+
+
+Ruby takes 10
+minutes to run 27 through 127 balls
+Swift is 14 minutes in and still working on ball 97
+

@@ -95,7 +95,8 @@ ab1[1] = ball2
 ab1[2] = ball1
 ab1[3] = ball2
 ab1.count
-
+ab1.removeAll(keepCapacity: true)
+ab1.count
 
 
 var c1 = [Ball]()
@@ -111,6 +112,7 @@ c3 == c1
 
 c2.count
 c1 == c2
+
 
 
 

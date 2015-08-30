@@ -9,8 +9,8 @@
 import Foundation
 
 
-// MARK: - Data setup
-class Ball {
+// MARK: - Data structure
+class Ball: Equatable {
     let ballId: Int
     
     init(let ballId: Int) {
@@ -77,30 +77,14 @@ class Clock {
 }
 
 // MARK: - Foundation work
-func ==(let lhs: [Ball], let rhs: [Ball]) -> Bool {
-    var match = false
-    
-    if lhs.isEmpty && rhs.isEmpty {
-        match = true
-    } else if lhs.count == rhs.count {
-        for var index = 0; index < lhs.count; index++ {
-            match = lhs[index].ballId == rhs[index].ballId
-            if match == false {
-                break
-            }
-        }
-    }
-    
-    return match
+func ==(let lhs: Ball, let rhs: Ball) -> Bool {
+    return lhs.ballId == rhs.ballId
 }
 
-func cycleClockWith(let ballCount: Int, let logTime: Bool) -> String {
+// MARK: - Process
+func cycleClockWith(let ballCount: Int) -> (ballCount: Int, ticks: Int, processTime: NSTimeInterval) {
     
-    var startTime: NSDate?
-    
-    if logTime {
-        startTime = NSDate()
-    }
+    var startTime = NSDate()
     
     var startingQueue = [Ball]()
     for var index = 0; index < ballCount; index++ {
@@ -124,15 +108,9 @@ func cycleClockWith(let ballCount: Int, let logTime: Bool) -> String {
         }
     }
     
-    let days = totalTicks / 24 / 60
-    let string = "\(ballCount) balls cycle after \(days) days."
+    let endTime = NSDate()
+    let spent = endTime.timeIntervalSinceDate(startTime)
     
-    if let start = startTime {
-        let endTime = NSDate()
-        let spent = endTime.timeIntervalSinceDate(start)
-        println(string + " [Processing Time: \(spent.toFormattedString())  Interval: \(spent)]")
-    }
-    
-    return string
+    return (ballCount, totalTicks, spent)
 }
 

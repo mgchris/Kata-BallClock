@@ -27,18 +27,20 @@ class BlockClockTest: XCTestCase {
     }
     
     func testBall30() {
-        let string = cycleClockWith(30, false)
-        XCTAssert("30 balls cycle after 15 days." == string, "Incorrect string [" + string + "]")
+        let output = cycleClockWith(30)
+        XCTAssert(30 == output.0, "Incorrect out put: \(output)")
+        XCTAssert(21600 == output.1, "Incorrect out put: \(output)")
     }
     
     func testBall45() {
-        let string = cycleClockWith(45, false)
-        XCTAssert("45 balls cycle after 378 days." == string, "Incorrect string [" + string + "]")
+        let output = cycleClockWith(45)
+        XCTAssert(45 == output.0, "Incorrect out put: \(output)")
+        XCTAssert(544320 == output.1, "Incorrect out put: \(output)")
     }
     
     func testPerformanceBall30() {
         self.measureBlock() {
-            cycleClockWith(30, false)
+            cycleClockWith(30)
         }
     }
     

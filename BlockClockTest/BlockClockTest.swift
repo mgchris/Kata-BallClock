@@ -21,25 +21,44 @@ class BlockClockTest: XCTestCase {
         super.tearDown()
     }
     
+    func x_testBall27() {
+        let output = cycleClockWith(27)
+        XCTAssert(27 == output.0, "Incorrect out put: \(output)")
+        XCTAssert(21600 == output.1, "Incorrect out put: \(output)")
+    }
+    
     func testBall30() {
         let output = cycleClockWith(30)
         XCTAssert(30 == output.0, "Incorrect out put: \(output)")
         XCTAssert(21600 == output.1, "Incorrect out put: \(output)")
     }
     
-    func testBall45() {
+    func testBall35() {
+        let output = cycleClockWith(35)
+        XCTAssert(35 == output.0, "Incorrect out put: \(output)")
+        XCTAssert(17280 == output.1, "Incorrect out put: \(output)")
+    }
+    
+    func x_testBall45() {
         let output = cycleClockWith(45)
         XCTAssert(45 == output.0, "Incorrect out put: \(output)")
         XCTAssert(544320 == output.1, "Incorrect out put: \(output)")
     }
     
-    func XtestPerformanceBall30() {
+    
+    func testPerformanceBall30() {
         self.measureBlock() {
             cycleClockWith(30)
         }
     }
     
-    func XtestPerformanceBall45() {
+    func testPerformanceBall35() {
+        self.measureBlock() {
+            cycleClockWith(35)
+        }
+    }
+    
+    func testPerformanceBall45() {
         self.measureBlock() {
             cycleClockWith(45)
         }

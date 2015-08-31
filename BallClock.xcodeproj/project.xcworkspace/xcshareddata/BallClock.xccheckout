@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E4A02AE3-234F-46D9-85DF-87E6B3E372D7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BallClock</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>12F1EDF974A8D9F151E42640FCC1C56C778D5B65</key>
+		<string>https://github.com/mgchris/Kata-BallClock.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BallClock.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>12F1EDF974A8D9F151E42640FCC1C56C778D5B65</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mgchris/Kata-BallClock.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>12F1EDF974A8D9F151E42640FCC1C56C778D5B65</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>12F1EDF974A8D9F151E42640FCC1C56C778D5B65</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BallClock</string>
+		</dict>
+	</array>
+</dict>
+</plist>

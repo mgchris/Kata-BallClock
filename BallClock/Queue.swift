@@ -9,12 +9,13 @@
 import Foundation
 
 class QueueNode<T> {
-    var key: T?
-    var next: QueueNode?
+    var value: T?
+    var nextNode: QueueNode?
 }
 
-class Queue<T> {
+class Queue<T: Equatable> {
     private var top: QueueNode<T>! = QueueNode<T>()
+    private var last: QueueNode<T>! = QueueNode<T>()
     private var size = 0
     
     var count: Int {
@@ -23,44 +24,48 @@ class Queue<T> {
         }
     }
     
-    func enqueue(var key: T) {
+    func enqueue(let value: T) {
         
         if self.top == nil {
             self.top = QueueNode<T>()
         }
         
-        if self.top.key == nil {
-            self.top.key = key
+        if self.top.value == nil {
+            self.top.value = value
+        } else if self.last.value == nil {
+            self.last.value = value
         } else {
-        
-            var childToUse = QueueNode<T>()
-            var current = top
-            
-            while current.next != nil {
-                current = current.next!
-            }
-            
-            childToUse.key = key
-            current.next = childToUse
+            var node = QueueNode<T>()
+            node.value = value
+            self.last.nextNode = node
+            self.last = node
         }
         
         self.size++
     }
     
+    func enqueue(let values: [T]) {
+        for key in values {
+            self.enqueue(key)
+        }
+    }
+    
     func dequeue() -> T? {
-        let topItem: T? = self.top?.key
+        let topItem: T? = self.top?.value
         
         if topItem == nil {
             return nil
         }
         
-        var queueItem: T? = self.top.key!
+        var queueItem: T? = self.top.value!
         
-        if let nextItem = self.top.next {
+        if let nextItem = self.top.nextNode {
             self.top = nextItem
         } else {
             self.top = nil
         }
+        
+        self.size--
         
         return queueItem
     }
@@ -68,15 +73,42 @@ class Queue<T> {
     func isEmpty() -> Bool {
         var empty = true
         
-        if let topItem = self.top?.key {
+        if let topItem = self.top?.value {
             empty = false
         }
         
         return empty
     }
     
-    func peek() -> T? {
-        return self.top.key
+    func peekFirst() -> T? {
+        return self.top?.value
+    }
+    
+    func peekLast() -> T? {
+        return self.last?.value
+    }
+    
+    func orderedCompared(let value: T, let forIndex: Int) -> Bool {
+        var match = true
+        var last = self.top
+        
+        if forIndex < self.count {
+            for i in 0...self.count {
+                if let current = last.nextNode {
+                    if let data = current.value {
+                        if value != data {
+                            match = false
+                            break
+                        }
+                    }
+                } else {
+                    match = false
+                    break
+                }
+            }
+        }
+        
+        return match
     }
 }
 

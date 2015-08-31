@@ -23,7 +23,7 @@ import Foundation
 
 func simpleProcess() {
     let start = NSDate()
-    var output = [(Int, Int, NSTimeInterval)]()
+    var output = [(Int, Int, NSTimeInterval)?](count: 101, repeatedValue: nil)
     for i in 27...127 {
         let data = cycleClockWith(i)
         
@@ -32,14 +32,17 @@ func simpleProcess() {
     
     var minimumTicks = 0
     for data in output {
-        minimumTicks += data.1
-        println(" time: \(data.2.toFormattedString())")
+        if let tuple = data {
+            let days = tuple.1 / 24 / 60
+            println("\(tuple.0) balls cycle after \(days) days. time: \(tuple.2.toFormattedString())")
+            minimumTicks += tuple.1
+        }
     }
     
     let end = NSDate()
     let interval = end.timeIntervalSinceDate(start)
     
-    println("\n\nTotal processing Time: \(interval.toFormattedString()) \nMinimum Ticks \(minimumTicks)")
+    println("\n\nTotal processing Time: \(interval.toFormattedString()) Minimum Ticks \(minimumTicks)")
 }
 
 
@@ -95,6 +98,7 @@ func gcdProcess() {
 
 
 // MARK: - Run
-gcdProcess()
+//gcdProcess()
+simpleProcess()
 
 

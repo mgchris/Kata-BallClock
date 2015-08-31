@@ -35,6 +35,15 @@ class ArrayTest: XCTestCase {
         }
     }
     
+    func testArrayAdd10000Version2() {
+        self.measureBlock { () -> Void in
+            var array = [Int](count: 10000, repeatedValue: 0)
+            for i in 0..<10000 {
+                array[i] = i
+            }
+        }
+    }
+    
     func testArrayReverse() {
         var array = createIndexArray(10000)
         self.measureBlock() {

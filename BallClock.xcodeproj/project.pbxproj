@@ -15,6 +15,8 @@
 		0A04B3671B935F380075EAB1 /* ArrayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A04B3661B935F380075EAB1 /* ArrayTest.swift */; };
 		0A04CD541B94C06B00192F25 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A04CD531B94C06B00192F25 /* Queue.swift */; };
 		0A08181B1B9026C800A74472 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A08181A1B9026C800A74472 /* main.swift */; };
+		0AC45D011B94C978004F1048 /* QueueTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC45D001B94C978004F1048 /* QueueTest.swift */; };
+		0AC45D021B94C9D9004F1048 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A04CD531B94C06B00192F25 /* Queue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +41,7 @@
 		0A04CD531B94C06B00192F25 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		0A0818171B9026C800A74472 /* BallClock */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BallClock; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A08181A1B9026C800A74472 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		0AC45D001B94C978004F1048 /* QueueTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,7 @@
 			children = (
 				0A037ADB1B9147820022EB1A /* BlockClockTest.swift */,
 				0A04B3661B935F380075EAB1 /* ArrayTest.swift */,
+				0AC45D001B94C978004F1048 /* QueueTest.swift */,
 				0A037AD91B9147820022EB1A /* Supporting Files */,
 			);
 			path = BlockClockTest;
@@ -194,9 +198,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A037ADC1B9147820022EB1A /* BlockClockTest.swift in Sources */,
+				0AC45D021B94C9D9004F1048 /* Queue.swift in Sources */,
 				0A04B3671B935F380075EAB1 /* ArrayTest.swift in Sources */,
 				0A037AE01B9148D40022EB1A /* BallClock.swift in Sources */,
 				0A037AE11B9148D70022EB1A /* Helper.swift in Sources */,
+				0AC45D011B94C978004F1048 /* QueueTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

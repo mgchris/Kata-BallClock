@@ -30,19 +30,26 @@ func simpleProcess() {
         output[i - 27] = data
     }
     
-    var minimumTicks = 0
+    var minimumTime: NSTimeInterval?
     for data in output {
         if let tuple = data {
             let days = tuple.1 / 24 / 60
             println("\(tuple.0) balls cycle after \(days) days. time: \(tuple.2.toFormattedString())")
-            minimumTicks += tuple.1
+            
+            if let mTime = minimumTime {
+                if tuple.2 > mTime {
+                    minimumTime = tuple.2
+                }
+            } else {
+                minimumTime = tuple.2
+            }
         }
     }
     
     let end = NSDate()
     let interval = end.timeIntervalSinceDate(start)
     
-    println("\n\nTotal processing Time: \(interval.toFormattedString()) Minimum Ticks \(minimumTicks)")
+    println("\n\nTotal processing Time: \(interval.toFormattedString())  Minimum time: \(minimumTime!.toFormattedString())")
 }
 
 

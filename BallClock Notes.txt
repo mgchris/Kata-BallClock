@@ -139,7 +139,6 @@ Total processing Time: 00:47:08:61
 
 Iteration1 GCD:
 
-
 27 balls cycle after 23 days. time: 00:00:00:22
 28 balls cycle after 76 days. time: 00:00:00:78
 29 balls cycle after 102 days. time: 00:00:01:04
@@ -247,5 +246,112 @@ Total processing Time: 00:14:46:07  Minimum time: 00:10:04:92
 
 
 
+
+Iteration2 - Ball to Int
+
+27 balls cycle after 23 days. time: 00:00:00:21
+28 balls cycle after 76 days. time: 00:00:00:67
+29 balls cycle after 102 days. time: 00:00:00:93
+30 balls cycle after 15 days. time: 00:00:00:13
+31 balls cycle after 85 days. time: 00:00:00:75
+32 balls cycle after 65 days. time: 00:00:00:57
+33 balls cycle after 138 days. time: 00:00:01:24
+34 balls cycle after 91 days. time: 00:00:00:80
+35 balls cycle after 12 days. time: 00:00:00:10
+36 balls cycle after 117 days. time: 00:00:01:04
+37 balls cycle after 120 days. time: 00:00:01:07
+38 balls cycle after 345 days. time: 00:00:03:05
+39 balls cycle after 35 days. time: 00:00:00:33
+40 balls cycle after 37 days. time: 00:00:00:34
+41 balls cycle after 217 days. time: 00:00:01:93
+42 balls cycle after 114 days. time: 00:00:00:99
+43 balls cycle after 110 days. time: 00:00:00:98
+44 balls cycle after 105 days. time: 00:00:00:92
+45 balls cycle after 378 days. time: 00:00:03:41
+46 balls cycle after 126 days. time: 00:00:01:11
+47 balls cycle after 6270 days. time: 00:00:57:03
+48 balls cycle after 12 days. time: 00:00:00:10
+49 balls cycle after 513 days. time: 00:00:04:52
+50 balls cycle after 1116 days. time: 00:00:10:07
+51 balls cycle after 770 days. time: 00:00:07:01
+52 balls cycle after 86 days. time: 00:00:00:80
+53 balls cycle after 51 days. time: 00:00:00:47
+54 balls cycle after 30 days. time: 00:00:00:26
+55 balls cycle after 693 days. time: 00:00:06:16
+56 balls cycle after 180 days. time: 00:00:01:57
+57 balls cycle after 930 days. time: 00:00:08:31
+58 balls cycle after 559 days. time: 00:00:05:06
+59 balls cycle after 858 days. time: 00:00:08:03
+60 balls cycle after 495 days. time: 00:00:04:30
+61 balls cycle after 11067 days. time: 00:01:40:57
+62 balls cycle after 714 days. time: 00:00:06:45
+63 balls cycle after 455 days. time: 00:00:04:18
+64 balls cycle after 378 days. time: 00:00:03:40
+65 balls cycle after 84 days. time: 00:00:00:77
+66 balls cycle after 105 days. time: 00:00:00:96
+67 balls cycle after 12 days. time: 00:00:00:10
+68 balls cycle after 236 days. time: 00:00:02:19
+69 balls cycle after 7095 days. time: 00:01:05:17
+70 balls cycle after 255 days. time: 00:00:02:32
+71 balls cycle after 60 days. time: 00:00:00:54
+72 balls cycle after 4524 days. time: 00:00:40:73
+73 balls cycle after 3848 days. time: 00:00:34:40
+74 balls cycle after 1530 days. time: 00:00:14:34
+75 balls cycle after 1955 days. time: 00:00:17:71
+76 balls cycle after 268 days. time: 00:00:02:42
+77 balls cycle after 714 days. time: 00:00:06:38
+78 balls cycle after 25389 days. time: 00:03:51:11
+79 balls cycle after 1155 days. time: 00:00:10:82
+80 balls cycle after 9360 days. time: 00:01:24:76
+81 balls cycle after 2006 days. time: 00:00:18:34
+82 balls cycle after 805 days. time: 00:00:07:55
+83 balls cycle after 4446 days. time: 00:00:39:99
+84 balls cycle after 1122 days. time: 00:00:10:64
+85 balls cycle after 540 days. time: 00:00:04:75
+86 balls cycle after 36 days. time: 00:00:00:33
+87 balls cycle after 570 days. time: 00:00:05:19
+88 balls cycle after 1026 days. time: 00:00:09:03
+89 balls cycle after 11033 days. time: 00:01:38:93
+90 balls cycle after 1218 days. time: 00:00:10:88
+91 balls cycle after 6580 days. time: 00:00:59:13
+92 balls cycle after 312 days. time: 00:00:02:71
+93 balls cycle after 301 days. time: 00:00:02:67
+94 balls cycle after 3367 days. time: 00:00:29:98
+95 balls cycle after 42780 days. time: 00:06:13:07
+96 balls cycle after 2550 days. time: 00:00:23:35
+97 balls cycle after 550 days. time: 00:00:04:97
+98 balls cycle after 1365 days. time: 00:00:12:46
+99 balls cycle after 6630 days. time: 00:01:01:25
+100 balls cycle after 105 days. time: 00:00:00:93
+101 balls cycle after 861 days. time: 00:00:08:03
+102 balls cycle after 4514 days. time: 00:00:41:93
+103 balls cycle after 291 days. time: 00:00:02:72
+104 balls cycle after 3960 days. time: 00:00:36:18
+105 balls cycle after 1464 days. time: 00:00:13:55
+106 balls cycle after 1577 days. time: 00:00:14:26
+107 balls cycle after 4284 days. time: 00:00:39:77
+108 balls cycle after 5187 days. time: 00:00:48:97
+109 balls cycle after 126 days. time: 00:00:01:14
+110 balls cycle after 17094 days. time: 00:02:41:19
+111 balls cycle after 15330 days. time: 00:02:22:86
+112 balls cycle after 1785 days. time: 00:00:16:65
+113 balls cycle after 43890 days. time: 00:05:36:26
+114 balls cycle after 25872 days. time: 00:03:52:49
+115 balls cycle after 5762 days. time: 00:00:53:68
+116 balls cycle after 3325 days. time: 00:00:30:75
+117 balls cycle after 204 days. time: 00:00:01:87
+118 balls cycle after 3420 days. time: 00:00:32:35
+119 balls cycle after 78120 days. time: 00:07:46:39
+120 balls cycle after 1224 days. time: 00:00:11:50
+121 balls cycle after 776 days. time: 00:00:07:31
+122 balls cycle after 273 days. time: 00:00:02:56
+123 balls cycle after 108855 days. time: 00:09:35:05
+124 balls cycle after 174 days. time: 00:00:01:64
+125 balls cycle after 14430 days. time: 00:02:11:23
+126 balls cycle after 80080 days. time: 00:07:13:87
+127 balls cycle after 2415 days. time: 00:00:22:76
+
+
+Total processing Time: 00:14:02:43  Minimum time: 00:09:35:05
 
 

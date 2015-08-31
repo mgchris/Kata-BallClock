@@ -21,11 +21,6 @@ class BlockClockTest: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
-    
     func testBall30() {
         let output = cycleClockWith(30)
         XCTAssert(30 == output.0, "Incorrect out put: \(output)")
@@ -38,10 +33,15 @@ class BlockClockTest: XCTestCase {
         XCTAssert(544320 == output.1, "Incorrect out put: \(output)")
     }
     
-    func testPerformanceBall30() {
+    func XtestPerformanceBall30() {
         self.measureBlock() {
             cycleClockWith(30)
         }
     }
     
+    func XtestPerformanceBall45() {
+        self.measureBlock() {
+            cycleClockWith(45)
+        }
+    }
 }
